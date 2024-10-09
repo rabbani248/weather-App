@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <h1>Todays weather report</h1>
+    <div class="card">
+        <% if(locals.report){ %>
+     <ul>
+        <li>location name: <%= report.location.name %></li>
+        <li>country: <%= report.location.country %></li>
+        <li>temp: <%= report.current.temp_c %></li>
+        <li>condition: <ul>
+                       <li><%= report.current.condition.text %></li>
+                       <li><img src="<%= report.current.condition.icon %>"</li>
+        </ul></li>
+        <li>wind mph:<%= report.current.wind_mph %></li>
+        <li>feelslike temp:<%=report.current.feelslike_c  %></li>
+     </ul>
+     <% }else{ %>
+        <h2><%= error %></h2>
+        <% } %>
+    </div>
+</body>
+</html>

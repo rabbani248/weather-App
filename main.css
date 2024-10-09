@@ -1,0 +1,36 @@
+.card{
+    background-color: aliceblue;
+    width:fit-content;
+    height: fit-content;
+    padding:3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border */
+    font-size:2rem;
+    color: black;
+    font-family: "Nanum Gothic Coding", cursive;
+}
+
+h1 {
+    color:blue;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 10px;;
+}
+
+body{
+min-height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
